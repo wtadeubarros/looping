@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Looping</title>
+	</head>
+	<body>
+		<!-- Todos elementos estão dentro da classe "demonstracao", 
+            menos a classe menu.-->
+		<section class="demonstracao">
+			<header>
+				<h2 class="logo">Looping</h2>
+				<!-- define abertura do menu -->
+				<div class="clique ativar"></div>
+				<!-- /define abertura do menu -->
+			</header>
+			<video src="video.mp4" muted autoplay loop></video>
+			<div class="overlay"></div>
+			<div class="texto">
+				<h2>Sua marca</h2>
+				<h3>No topo</h3>
+				<p>
+					Aumente sua pegada digital com um website profissional, rankeamento no
+					google e muito mais. A looping oferece a você o melhor do mercado
+					digital. Faça um orçamento.
+				</p>
+				<a href="#">Consulte-nos</a>
+			</div>
+
+			<ul class="social">
+				<li>
+					<a href="#"
+						><img src="https://i.ibb.co/x7P24fL/facebook.png" alt=""
+					/></a>
+				</li>
+				<li>
+					<a href="#"
+						><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""
+					/></a>
+				</li>
+				<li>
+					<a href="#"
+						><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""
+					/></a>
+				</li>
+			</ul>
+		</section>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Início</a></li>
+				<li><a href="#">Fale Conosco</a></li>
+			</ul>
+		</div>
+		<script>
+			const menuClique = document.querySelector('.clique');
+			const demonstracao = document.querySelector('.demonstracao');
+
+			menuClique.addEventListener('click', () => {
+				menuClique.classList.toggle('ativar');
+				demonstracao.classList.toggle('ativar');
+			});
+		</script>
+	</body>
+</html>
